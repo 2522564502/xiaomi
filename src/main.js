@@ -7,6 +7,10 @@ import "./assets/app"
 // 引入样式重置文件
 import "./assets/reset.css"
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css';
+Vue.use(ElementUI);
+
 Vue.config.productionTip = false
 
 new Vue({
