@@ -43,7 +43,8 @@
     width: 3.75rem;
     background: #fff;
     padding: .1rem 0 0;
-    position: absolute;
+    position: fixed;
+    z-index: 10;
     bottom: 0;
     ul{
         display: flex;
