@@ -44,8 +44,8 @@
     background: #fff;
     padding: .1rem 0 0;
     position: fixed;
-    z-index: 10;
     bottom: 0;
+    z-index: 9;
     ul{
         display: flex;
         justify-content: space-between;
