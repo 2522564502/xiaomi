@@ -24,10 +24,15 @@
       </div>
     </div>
     <!--  -->
+    <Footer/>
   </div>
 </template>
 <script>
+import Footer from '@/components/footer/footer.vue'
 export default {
+  components:{
+    Footer
+  },
   created() {
     if (this.$router.path !== "/classify/tj"){
       this.$router.replace("/classify/tj");
@@ -91,5 +96,6 @@ export default {
 .div-right {
   width: 2.62rem;
   margin: auto;
+  height: 6.97rem;
 }
 </style>

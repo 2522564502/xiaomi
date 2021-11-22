@@ -237,6 +237,7 @@
    </div>
    </div>
   
+    <Footer/>
   </div>
 </template>
 
@@ -244,6 +245,7 @@
 // @ is an alias to /src
 import Swiper from "swiper";
 import "swiper/css/swiper.css";
+import Footer from '@/components/footer/footer.vue'
 export default {
   name: 'Home',
    data() {
@@ -319,6 +321,9 @@ export default {
     
     
     
+  components:{
+    Footer
+  },
 
   mounted(){
     this.add();
