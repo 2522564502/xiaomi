@@ -57,7 +57,10 @@ const routes = [
       
     ]
   },
-  
+  {
+    path: '/ss',
+    component: Ss
+  },
   {
     path: '/more',
     name: 'more',
@@ -68,7 +71,11 @@ const routes = [
     name: 'my',
     component: My
   },
- 
+  {
+    path: '/gen',
+    name: 'gen',
+    component: gen
+  },
 ]
 
 const router = new VueRouter({

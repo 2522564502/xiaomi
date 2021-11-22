@@ -750,7 +750,7 @@ export default {
   },
 };
 </script>
-<style  scope>
+<style  scoped>
 .header {
   width: 3.75rem;
   height: 9.74rem;

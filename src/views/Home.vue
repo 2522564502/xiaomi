@@ -80,9 +80,9 @@
               <span class="ju">956%</span>
             </p>
           </div>
-          <div class="cr">
+          <router-link to='/more' class="cr">
             <img src="https://img.youpin.mi-img.com/shopmain/d076d2cd183509e3a4f5090d816fc82b.png@base@tag=imgScale&h=264&w=264" alt="">
-          </div>
+          </router-link>
         </div>
         <div class="xian"></div>
         <div class="shx">
