@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Classify from '../views/lxy/classify.vue'
 import More from '../views/more.vue'
 import My from '../views/my.vue'
+import gen from "../components/genduo/index.vue"
 
 
 import Tj from '../views/lxy/tj.vue'
@@ -61,11 +62,7 @@ const routes = [
     name: 'my',
     component: My
   },
-  {
-    path: '/ss',
-    component: Ss,
-    name:'ss'
-  },
+ 
 ]
 
 const router = new VueRouter({

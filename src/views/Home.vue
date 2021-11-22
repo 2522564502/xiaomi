@@ -32,8 +32,10 @@
        <p>上新精选</p>
      </li>
      <li>
+       <router-link to="/gen">
        <img src="https://img.youpin.mi-img.com/jianyu/531253430ba83f5b88e4ae92cb5a197c.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>小米众筹</p>
+       </router-link>
      </li>
      <li>
        <img src="https://img.youpin.mi-img.com/jianyu/7a255e71670b9ef4a90723223265b5c5.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
@@ -61,7 +63,9 @@
         <img src="https://img.youpin.mi-img.com/jianyu/efaf252fb1ef07bb22395bc3649a127d.png?w=1053&h=180" alt="">
         <div class="fne">
           <h2>小米有品众筹</h2>
-          <p>更多></p>
+          <p>
+            <router-link to="/gen">更多></router-link>
+          </p>
         </div>
         <div class="cen">
           <div class="cl">
@@ -115,7 +119,9 @@
         <div class="plun">
         <div class="ly">
            <h2 class="hb">上新精选</h2>
-         <p class="du">更多></p>
+         <p class="du">
+           <router-link to="/gen">更多></router-link>
+         </p>
         </div>
          <!--  -->
           <div class="swiper mySwiper" id="ping">
@@ -183,7 +189,9 @@
            <h2 class="hb">有品秒杀</h2>
            <p class="f" style="float:left;font-size: .10rem;margin-left: .10rem;line-height:.26rem;">09点场：{{hour}}:{{minute}}:{{second}}</p>
 
-         <p class="du">更多></p>
+         <p class="du">
+           <router-link to="/gen">更多></router-link>
+         </p>
         </div>
         <!--  -->
         <div class="swiper mySwiper" id="ptwo">
