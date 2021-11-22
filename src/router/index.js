@@ -13,6 +13,8 @@ import Ys from '../views/lxy/ys.vue'
 import Jd from '../views/lxy/jd.vue'
 
 import Ss from '../views/lxy/ss.vue'
+
+import Jx from '../views/lxy/jx.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -20,6 +22,10 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/jx',
+    component: Jx,
   },
   {
     path: '/classify',

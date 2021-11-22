@@ -27,10 +27,10 @@
 
    <!--  -->
    <ul class="there">
-     <li>
+     <router-link to='/jx' tag="li">
        <img src="https://img.youpin.mi-img.com/jianyu/3b9f8b4e5a1639cafbb3be08cba9963a.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>上新精选</p>
-     </li>
+     </router-link>
      <li>
        <img src="https://img.youpin.mi-img.com/jianyu/531253430ba83f5b88e4ae92cb5a197c.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>小米众筹</p>
