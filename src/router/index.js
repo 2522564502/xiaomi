@@ -5,6 +5,7 @@ import Classify from '../views/lxy/classify.vue'
 import More from '../views/more.vue'
 import My from '../views/my.vue'
 
+import ziying from '@/views/ziying'
 
 import Tj from '../views/lxy/tj.vue'
 import Sm from '../views/lxy/sm.vue'
@@ -65,6 +66,11 @@ const routes = [
     path: '/ss',
     component: Ss,
     name:'ss'
+  },
+  {
+    path:'/ziying',
+    component: ziying,
+    name:'ziying'
   },
 ]
 

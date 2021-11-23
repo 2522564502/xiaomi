@@ -43,10 +43,12 @@
        <img src="https://img.youpin.mi-img.com/jianyu/d5bb5c4a30f22e6d141d191bae80c70b.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>有品生活+</p>
      </li>
+     <router-link to="ziying">
      <li>
        <img src="https://img.youpin.mi-img.com/jianyu/52ec26cccb4d945aa4bacac4ec7c4622.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>小米自营</p>
      </li>
+     </router-link>
    </ul>
    <!--  -->
    <div class="foru">
