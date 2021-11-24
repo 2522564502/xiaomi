@@ -16,7 +16,7 @@
         <router-link to="sm" tag="li" slot="title">手机数码</router-link>
         <router-link to="yl" tag="li" slot="title">小米电视</router-link>
         <router-link to="ys" tag="li" slot="title">影视娱乐</router-link>
-        <router-link to="jd" tag="li" slot="title">大家电</router-link>
+        <router-link to="jd" tag="li" slot="title" v-for="item in 20" :key="item.index">大家电</router-link>
       </div>
       <!--  -->
       <div class="div-right">
@@ -24,10 +24,15 @@
       </div>
     </div>
     <!--  -->
+    <Footer/>
   </div>
 </template>
 <script>
+import Footer from '@/components/footer/footer.vue'
 export default {
+  components:{
+    Footer
+  },
   created() {
     if (this.$router.path !== "/classify/tj"){
       this.$router.replace("/classify/tj");
@@ -40,6 +45,8 @@ export default {
   width: 3.75rem;
   height: 100%;
   background-color: rgb(246, 246, 246);
+  overflow: hidden;
+  padding-bottom: 0.6rem;
 }
 .classify-span {
   width: 100%;
@@ -66,8 +73,8 @@ export default {
 .div-left {
   width: 0.93rem;
   background: white;
-}
-.div-left {
+  height: 6.8rem;
+    overflow-y: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,5 +98,15 @@ export default {
 .div-right {
   width: 2.62rem;
   margin: auto;
+  height: 6.97rem;
 }
+
+.div-left::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+  }
+  .tj::-webkit-scrollbar {
+    /*隐藏滚轮*/
+    display: none;
+  }
 </style>

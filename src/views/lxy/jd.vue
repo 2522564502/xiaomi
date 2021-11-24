@@ -256,7 +256,7 @@
 </template>
 <style scoped>
 .tj {
-  height: 5.2rem;
+  height: 100%;
   overflow: hidden;
   overflow-y: scroll;
 }

@@ -45,6 +45,7 @@
     padding: .1rem 0 0;
     position: fixed;
     bottom: 0;
+    z-index: 9;
     ul{
         display: flex;
         justify-content: space-between;

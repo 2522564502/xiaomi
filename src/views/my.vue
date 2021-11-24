@@ -112,13 +112,20 @@
       </div>
       
     </div>
-    
+    <Footer/>
   </div>
 </template>
 <script>
+import Footer from '../components/footer/footer.vue'
+export default {
+  
+  components:{
+    Footer
+  }
+}
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .box {
   width: 3.75rem;
   height: 6rem;
