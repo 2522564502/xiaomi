@@ -6,6 +6,7 @@ import More from '../views/more.vue'
 import My from '../views/my.vue'
 import gen from "../components/genduo/index.vue"
 
+import ziying from '@/views/ziying'
 
 import Tj from '../views/lxy/tj.vue'
 import Sm from '../views/lxy/sm.vue'
@@ -68,7 +69,6 @@ const routes = [
     name: 'my',
     component: My
   },
- 
 ]
 
 const router = new VueRouter({
