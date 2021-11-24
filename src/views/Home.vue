@@ -32,14 +32,16 @@
        <p>上新精选</p>
      </router-link>
      <li>
-       <router-link to="/gen">
+       <router-link to="/gen1">
        <img src="https://img.youpin.mi-img.com/jianyu/531253430ba83f5b88e4ae92cb5a197c.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>小米众筹</p>
        </router-link>
      </li>
      <li>
-       <img src="https://img.youpin.mi-img.com/jianyu/7a255e71670b9ef4a90723223265b5c5.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
+       <router-link to="/miao">
+         <img src="https://img.youpin.mi-img.com/jianyu/7a255e71670b9ef4a90723223265b5c5.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
        <p>优品秒杀</p>
+       </router-link>
      </li>
      <li>
        <img src="https://img.youpin.mi-img.com/jianyu/d5bb5c4a30f22e6d141d191bae80c70b.png@base@tag=imgScale&h=100&m=1&q=80&w=100" alt="">
@@ -64,7 +66,7 @@
         <div class="fne">
           <h2>小米有品众筹</h2>
           <p>
-            <router-link to="/gen">更多></router-link>
+            <router-link to="/gen1">更多></router-link>
           </p>
         </div>
         <div class="cen">
@@ -120,7 +122,7 @@
         <div class="ly">
            <h2 class="hb">上新精选</h2>
          <p class="du">
-           <router-link to="/gen">更多></router-link>
+           <router-link to="/gen1">更多></router-link>
          </p>
         </div>
          <!--  -->
@@ -190,7 +192,7 @@
            <p class="f" style="float:left;font-size: .10rem;margin-left: .10rem;line-height:.26rem;">09点场：{{hour}}:{{minute}}:{{second}}</p>
 
          <p class="du">
-           <router-link to="/gen">更多></router-link>
+           <router-link to="/gen1">更多></router-link>
          </p>
         </div>
         <!--  -->

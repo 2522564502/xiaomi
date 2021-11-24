@@ -4,7 +4,7 @@ import Home from '../views/Home.vue'
 import Classify from '../views/lxy/classify.vue'
 import More from '../views/more.vue'
 import My from '../views/my.vue'
-import gen from "../components/genduo/index.vue"
+import gen1 from "../components/genduo/index.vue"
 
 
 import Tj from '../views/lxy/tj.vue'
@@ -16,6 +16,8 @@ import Jd from '../views/lxy/jd.vue'
 import Ss from '../views/lxy/ss.vue'
 
 import Jx from '../views/lxy/jx.vue'
+
+import miao from "@/views/miao/one.vue"
 Vue.use(VueRouter)
 
 const routes = [
@@ -23,6 +25,15 @@ const routes = [
     path: '/',
     name: 'Home',
     component: Home
+  },
+  {
+    path: '/miao',
+    name: 'miao',
+    component: miao
+  },
+  {
+    path: '/gen1',
+    component:gen1,
   },
   {
     path: '/jx',

@@ -9,5 +9,7 @@ export default {
 }
 </script>
 <style lang="scss">
-
+body{
+  background: rgb(230, 230, 230);
+}
 </style>
