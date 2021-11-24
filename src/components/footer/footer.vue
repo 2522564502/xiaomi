@@ -18,7 +18,7 @@
                 </router-link>
             </li>
             <li>
-                <router-link to="/more">
+                <router-link to="">
                 <div>
                     <img src="@/assets/tab_images.png" alt="">
                 </div>
@@ -37,7 +37,7 @@
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 .footer{
     height: .5rem;
     width: 3.75rem;

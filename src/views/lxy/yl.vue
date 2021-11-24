@@ -10,25 +10,7 @@
     <div class="tj-li">
       <span class="tj-span">屏幕尺寸</span>
       <div class="tj-ul">
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
+        <li v-for="item in 3" :key='item.index'>
           <span>
             <img
               src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
@@ -62,65 +44,7 @@
     <!--  -->
     <div class="tj-li">
       <span class="tj-span">电视类型</span>
-      <div class="tj-ul">
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-      </div>
-      <div class="tj-ul">
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-      </div>
-      <div class="tj-ul">
+      <div class="tj-ul" v-for="item in 3" :key='item.index'>
         <li>
           <span>
             <img
@@ -154,25 +78,7 @@
     <div class="tj-li">
       <span class="tj-span">视听场景</span>
       <div class="tj-ul">
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
-          <span>
-            <img
-              src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
-              alt=""
-            />
-          </span>
-          <p>智能手表</p>
-        </li>
-        <li>
+        <li v-for="item in 3" :key='item.index'>
           <span>
             <img
               src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
@@ -200,7 +106,7 @@
 </template>
 <style scoped>
 .tj {
-  height: 100%;
+  height: 5.5rem;
   overflow: hidden;
   overflow-y: scroll;
 }

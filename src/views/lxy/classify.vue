@@ -16,7 +16,7 @@
         <router-link to="sm" tag="li" slot="title">手机数码</router-link>
         <router-link to="yl" tag="li" slot="title">小米电视</router-link>
         <router-link to="ys" tag="li" slot="title">影视娱乐</router-link>
-        <router-link to="jd" tag="li" slot="title" v-for="item in 20" :key="item.index">大家电</router-link>
+        <router-link to="jd" tag="li" slot="title">大家电</router-link>
       </div>
       <!--  -->
       <div class="div-right">
@@ -46,7 +46,7 @@ export default {
   height: 100%;
   background-color: rgb(246, 246, 246);
   overflow: hidden;
-  padding-bottom: 0.6rem;
+  padding-bottom: 0.2rem;
 }
 .classify-span {
   width: 100%;
@@ -73,7 +73,7 @@ export default {
 .div-left {
   width: 0.93rem;
   background: white;
-  height: 6.8rem;
+  height: 5.5rem;
     overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -98,7 +98,6 @@ export default {
 .div-right {
   width: 2.62rem;
   margin: auto;
-  height: 6.97rem;
 }
 
 .div-left::-webkit-scrollbar {

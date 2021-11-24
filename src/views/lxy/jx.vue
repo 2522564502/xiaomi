@@ -52,15 +52,15 @@
     </div>
     <!--  -->
     <div class="div-top">
-      <li>精选</li>
-      <li>家用电器</li>
-      <li>居家生活</li>
-      <li>服饰运动</li>
-      <li>智能数码</li>
-      <li>个护健康</li>
-      <li>日用文创</li>
-      <li>食品婴宠</li>
-      <li>珠宝首饰</li>
+      <router-link to="" tag="li" router-link-active>精选</router-link>
+      <router-link to="" tag="li">家用电器</router-link>
+      <router-link to="" tag="li">居家生活</router-link>
+      <router-link to="" tag="li">服饰运动</router-link>
+      <router-link to="" tag="li">智能数码</router-link>
+      <router-link to="" tag="li">个护健康</router-link>
+      <router-link to="" tag="li">日用文创</router-link>
+      <router-link to="" tag="li">食品婴宠</router-link>
+      <router-link to="" tag="li">珠宝首饰</router-link>
     </div>
     <!--  -->
     <div class="div-center">
@@ -220,6 +220,7 @@ export default {
     margin-right: 3.2vw;
     overflow: hidden;
     background-color: rgb(255, 255, 255);
+    padding-top: 0.1rem;
     li {
       box-sizing: border-box;
       display: flex;
@@ -287,10 +288,12 @@ export default {
       text-align: center;
       padding: 0 7px;
       font-size: 13px;
+      .router-link-active {
+        border-bottom: solid 0.02rem black;
+      }
     }
-    
   }
-  
+
   //
   .div-center {
     width: 3.75rem;
@@ -414,7 +417,7 @@ export default {
 }
 
 .div-top::-webkit-scrollbar {
-    /*隐藏滚轮*/
-    display: none;
-  }
+  /*隐藏滚轮*/
+  display: none;
+}
 </style>

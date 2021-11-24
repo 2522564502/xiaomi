@@ -1,0 +1,212 @@
+{
+    "goods": [
+        {
+            "img1":"https://img.youpin.mi-img.com/tag/19609a61b136ee353f4f2f71da87624c.png?w=138&h=42",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/4c793d05f09b04b25cfc4c8a3c3afe70.jpg?w=800&h=800",
+            "priceMin": 499,
+            "pl":"3188",
+            "hp":"98",
+            "xm":"小米自营",
+            "name": "Xiaomi  Sound 音箱",
+            "summary": "小米高保真智能音箱，360度全向出音",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "供电方式",
+                    "value": "外接电源"
+                }
+            ]
+        },
+        {
+            "img1":"https://img.youpin.mi-img.com/tag/cfef414d5452b47827212441e628b0b6.png?w=126&h=42",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/6f7a682edb6e4f4ca95a4ca4decd5246.jpg?w=800&h=800",
+            "priceMin": 199,
+            "pl":"308",
+            "hp":"95",
+            "xm":"小米自营",
+            "name": "小米AI音箱（第二代）",
+            "summary": "小米AI音箱第二代，经典延续，音质升级，智能体验升级。",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "米家联动"
+                }
+            ]
+        },
+        {
+            "img1":"https://img.youpin.mi-img.com/tag/cfef414d5452b47827212441e628b0b6.png?w=126&h=42",
+            "img2":"https://img.youpin.mi-img.com/tag/fae67385f83d33c17693cf58170a7c3b.png?w=108&h=42",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/b9f39747694810b35a7a5850d02d7f0e.jpg?w=800&h=800",
+            "priceMin": 499,
+            "pl":"4094",
+            "hp":"92",
+            "xm":"小米自营",
+            "name": "Redmi小爱触屏音箱 8",
+            "summary": "第3代小爱同学，8英寸高清大屏，智能家居操控，让智能更多可能",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "米家联动"
+                }
+            ]
+        },
+        {
+            "img1":"https://img.youpin.mi-img.com/tag/cfef414d5452b47827212441e628b0b6.png?w=126&h=42",
+            "imgSquare": "https://img.youpin.mi-img.com/goods/9c68e050bc81337417c7eb59a1f025c0.jpg",
+            "priceMin": 249,
+            "pl":"2350",
+            "hp":"96",
+            "xm":"小米自营",
+            "name": "小米小爱触屏音箱",
+            "summary": "看得见，触得到，视频也可定制专属闹钟，支持遥控数百个品牌产品",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "APP控制"
+                }
+            ]
+        },
+        {
+            "img1":"https://img.youpin.mi-img.com/tag/19609a61b136ee353f4f2f71da87624c.png?w=138&h=42",
+            "img2":"https://img.youpin.mi-img.com/tag/fae67385f83d33c17693cf58170a7c3b.png?w=108&h=42",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/9c35ac62748ca54b61f6f3c52ce3b6ba.jpeg?w=800&h=800",
+            "name": "小米小爱音箱 白色",
+            "priceMin": 249,
+            "pl":"305",
+            "hp":"90",
+            "xm":"小米自营",
+            "summary": "海量优质有声读物，人工智能语音对话，DTS音效，智能设备控制",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "金属"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "APP控制"
+                }
+            ]
+        },
+        {
+            "img1":"https://img.youpin.mi-img.com/tag/19609a61b136ee353f4f2f71da87624c.png?w=138&h=42",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/f281e77096839006faadf607807e90e1.jpg?w=800&h=800",
+            "name": "小米小爱音箱 Pro",
+            "priceMin": 299,
+            "pl":"5463",
+            "hp":"94",
+            "xm":"小米自营",
+            "summary": "智能设备控制，QQ音乐海量曲库，海量优质的有声读物，卓越音质",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "APP控制"
+                }
+            ]
+        }
+    ],
+    "gs": [
+        {
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/4c793d05f09b04b25cfc4c8a3c3afe70.jpg?w=800&h=800",
+            "priceMin": 49900,
+            "name": "小米智能门锁 E",
+            "summary": "小米高保真智能音箱，360度全向出音",
+            "points": [
+                {
+                    "name": "开锁方式",
+                    "value": "指纹"
+                },
+                {
+                    "name": "开门方式",
+                    "value": "执手款"
+                },
+                {
+                    "name": "是否支持小爱",
+                    "value": "支持小爱"
+                }
+            ]
+        },
+        {
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/6f7a682edb6e4f4ca95a4ca4decd5246.jpg?w=800&h=800",
+            "priceMin": 19900,
+            "name": "小米AI音箱（第二代）",
+            "summary": "小米AI音箱第二代，经典延续，音质升级，智能体验升级。",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "米家联动"
+                }
+            ]
+        },
+        {
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/b9f39747694810b35a7a5850d02d7f0e.jpg?w=800&h=800",
+            "priceMin": 49900,
+            "name": "Redmi小爱触屏音箱 8",
+            "summary": "第3代小爱同学，8英寸高清大屏，智能家居操控，让智能更多可能",
+            "points": [
+                {
+                    "name": "材质",
+                    "value": "塑料"
+                },
+                {
+                    "name": "连接方式",
+                    "value": "蓝牙"
+                },
+                {
+                    "name": "智能类型",
+                    "value": "米家联动"
+                }
+            ]
+        }
+    ]
+}
