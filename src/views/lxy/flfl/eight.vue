@@ -1,29 +1,6 @@
 <template>
-  <div class="fl">
-    <div class="div-top">
-      <router-link to="classify/tj" tag="span">
-        <img src="../../assets/lxy/icon_arrow.png" alt="" />
-      </router-link>
-      <p>智能家庭</p>
-      <router-link to="/ss" tag="span">
-        <img src="../../assets/lxy/icon_search.png" alt="" />
-      </router-link>
-    </div>
     <!--  -->
-    <div class="div-conter">
-      <router-link to="" tag="li" v-for="item in data" :key="item.index">
-        <span>
-          <img :src="item.img" alt="" class="span" />
-        </span>
-        <p>{{ item.name }}</p>
-      </router-link>
-    </div>
-    <!--  -->
-    <div class="div-zh">
-      <li v-for="item in zh" :key="item.index">{{ item.name }}</li>
-    </div>
-    <!--  -->
-    <div class="div-goods">
+    <div>
       <li v-for="item in goods" :key="item.index">
         <span>
           <img :src="item.imgSquare" alt="" />
@@ -54,89 +31,20 @@
         </div>
       </li>
     </div>
-    <!--  -->
-  </div>
 </template>
 <script>
-const zh = [
-  {
-    name: "综合",
-  },
-  {
-    name: "新品",
-  },
-  {
-    name: "价格",
-  },
-  {
-    name: "销量",
-  },
-  {
-    name: "筛选",
-  },
-];
-import data from "../../staic/index.json";
-import goods from "../../staic/xiaoai.json";
+import goods from "../../../staic/xiaoai.json";
 export default {
   data() {
     return {
-      data: data.data,
-      zh,
       goods: goods.goods,
     };
   },
+  methods:{
+  }
 };
 </script>
 <style scoped lang='scss'>
-.fl {
-  width: 3.75rem;
-  .div-top {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 0.1rem;
-    align-items: center;
-    img {
-      width: 0.32rem;
-      height: 0.32rem;
-    }
-  }
-  //
-  .div-conter {
-    width: 3.75rem;
-    display: flex;
-    overflow-x: scroll;
-    li {
-      float: left;
-      float: left;
-      width: 20%;
-      flex-shrink: 0;
-      text-align: center;
-      font-size: 13px;
-      .router-link-active {
-        border-bottom: solid 0.02rem black;
-      }
-      .span {
-        width: 0.55rem;
-        height: 0.55rem;
-        background: rgb(243, 244, 245);
-        border-radius: 0.1rem;
-      }
-    }
-  }
-  .div-conter::-webkit-scrollbar {
-    /*隐藏滚轮*/
-    display: none;
-  }
-  //
-  .div-zh {
-    display: flex;
-    justify-content: space-around;
-    margin: 0.2rem 0;
-    li {
-      font-size: 0.16rem;
-    }
-  }
-  //
   .div-goods {
     li {
       display: flex;
@@ -215,6 +123,4 @@ export default {
       }
     }
   }
-  //
-}
 </style>

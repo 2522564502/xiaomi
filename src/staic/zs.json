@@ -149,14 +149,10 @@
     ],
     "gs": [
         {
-            "img1":"https://img.youpin.mi-img.com/tag/19609a61b136ee353f4f2f71da87624c.png?w=138&h=42",
-            "imgSquare": "https://img.youpin.mi-img.com/shopmain/f334aa5bf60b4890bac6e11ea3aa97ae.jpg?w=800&h=800",
-            "priceMin": 499,
-            "pl":"308",
-            "hp":"92",
-            "xm":"小米自营",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/4c793d05f09b04b25cfc4c8a3c3afe70.jpg?w=800&h=800",
+            "priceMin": 49900,
             "name": "小米智能门锁 E",
-            "summary": "6种开锁方式，防插安全锁体，电子门铃，智能联动，7大安全设计",
+            "summary": "小米高保真智能音箱，360度全向出音",
             "points": [
                 {
                     "name": "开锁方式",
@@ -173,50 +169,42 @@
             ]
         },
         {
-            "img1":"https://img.youpin.mi-img.com/tag/19609a61b136ee353f4f2f71da87624c.png?w=138&h=42",
-            "imgSquare": "https://img.youpin.mi-img.com/shopmain/9de3d6bfa2a2519a64d5e97edd205f92.jpg?w=800&h=800",
-            "priceMin": 199,
-            "pl":"825",
-            "hp":"96",
-            "xm":"小米自营",
-            "name": "小米智能门锁 Pro 碳素黑",
-            "summary": "高清广角摄像，门口侦测，可视远程对讲，电子门铃，7大开锁方式",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/6f7a682edb6e4f4ca95a4ca4decd5246.jpg?w=800&h=800",
+            "priceMin": 19900,
+            "name": "小米AI音箱（第二代）",
+            "summary": "小米AI音箱第二代，经典延续，音质升级，智能体验升级。",
             "points": [
                 {
-                    "name": "开锁方式",
-                    "value": "指纹"
+                    "name": "材质",
+                    "value": "塑料"
                 },
                 {
-                    "name": "开门方式",
-                    "value": "执手款"
+                    "name": "连接方式",
+                    "value": "蓝牙"
                 },
                 {
-                    "name": "是否支持小爱",
-                    "value": "支持小爱"
+                    "name": "智能类型",
+                    "value": "米家联动"
                 }
             ]
         },
         {
-            "img1":"https://img.youpin.mi-img.com/tag/19609a61b136ee353f4f2f71da87624c.png?w=138&h=42",
-            "imgSquare": "https://img.youpin.mi-img.com/shopmain/184215e68220be36b93a4cb3828baf3a.jpg?w=800&h=800",
-            "priceMin": 499,
-            "pl":"5852",
-            "hp":"97",
-            "xm":"小米自营",
-            "name": "小米智能门锁1S",
-            "summary": "经典门锁 再进一步！3D半导体指纹识别，开门更精准，更快速！",
+            "imgSquare": "https://img.youpin.mi-img.com/shopmain/b9f39747694810b35a7a5850d02d7f0e.jpg?w=800&h=800",
+            "priceMin": 49900,
+            "name": "Redmi小爱触屏音箱 8",
+            "summary": "第3代小爱同学，8英寸高清大屏，智能家居操控，让智能更多可能",
             "points": [
                 {
-                    "name": "开锁方式",
-                    "value": "NFC"
+                    "name": "材质",
+                    "value": "塑料"
                 },
                 {
-                    "name": "开门方式",
-                    "value": "执手款"
+                    "name": "连接方式",
+                    "value": "蓝牙"
                 },
                 {
-                    "name": "是否接入米家",
-                    "value": "接入米家"
+                    "name": "智能类型",
+                    "value": "米家联动"
                 }
             ]
         }
