@@ -10,7 +10,7 @@
     <div class="tj-li">
       <span class="tj-span">精选分类</span>
       <div class="tj-ul">
-        <li v-for="item in 3" :key='item.index'>
+        <router-link to='/fl' tag="li" v-for="item in 3" :key='item.index'>
           <span>
             <img
               src="../../assets/lxy/643cba4a15984e1b290ba5bad2752264.webp"
@@ -18,7 +18,7 @@
             />
           </span>
           <p>智能手表</p>
-        </li>
+        </router-link>
       </div>
       <div class="tj-ul">
         <li v-for="item in 3" :key='item.index'>
@@ -58,8 +58,9 @@
           <p>智能手表</p>
         </li>
       </div>
-
     </div>
+    <!--  -->
+    
     <!--  -->
   </div>
 </template>

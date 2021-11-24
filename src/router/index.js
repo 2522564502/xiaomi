@@ -16,6 +16,8 @@ import Jd from '../views/lxy/jd.vue'
 import Ss from '../views/lxy/ss.vue'
 
 import Jx from '../views/lxy/jx.vue'
+import Fl from '../views/lxy/fl.vue'
+import Flyx from '../views/lxy/flyx.vue'
 Vue.use(VueRouter)
 
 const routes = [
@@ -55,6 +57,16 @@ const routes = [
         component: Jd
       },
       
+    ]
+  },
+  {
+    path: '/fl',
+    component: Fl,
+    children:[
+      {
+        path: 'flyx',
+        component: Flyx
+      },
     ]
   },
   {
