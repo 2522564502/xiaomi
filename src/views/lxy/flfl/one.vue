@@ -1,7 +1,7 @@
 <template>
     <!--  -->
     <div>
-      <li v-for="item in goods" :key="item.index">
+      <li v-for="item in gs" :key="item.index">
         <span>
           <img :src="item.imgSquare" alt="" />
         </span>
@@ -40,14 +40,15 @@
     </div>
 </template>
 <script>
-import goods from "../../../staic/xiaoai.json";
+import gs from "../../../staic/xiaoai.json";
 export default {
   data() {
     return {
-      goods: goods.gs,
+      gs: gs.gs,
     };
   },
-  methods:{
-  }
-};
+  methods: {
+  
+  },
+}
 </script>

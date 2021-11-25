@@ -27,56 +27,46 @@
       </div>
       <!--  -->
       <div class="div-zh">
-        <li
-          v-for="(item, index) in zh"
-          :key="index"
-          :class="{ border: type == index }"
-          @click="changeBorder(index)"
-        >
-          {{ item.name }}
+        <li :class="{ border: type==0 }" @click="zh()" >
+          综合
+          <div :class="{ div: is==false }">
+            <div :class="{ dv: is==true }">
+              <div id="div">
+              <p :class="{ border: type == 0 }" @click="onzh">综合排序</p>
+              <p :class="{ border: type == 6 }" @click="onhp">好评优先</p>
+            </div>
+            </div>
+          </div>
         </li>
+        <li :class="{ border: type == 1 }" @click="onSorm">新品</li>
+        <li :class="{ border: type == 2 }" @click="onSort">价格</li>
+        <li :class="{ border: type == 3 }" @click="onxl">销量</li>
+        <li :class="{ border: type == 4 }" @click="onsx">筛选</li>
       </div>
     </div>
     <!--  -->
-    <div class="div-goods">
+    <div>
+ <div class="div-goods" :class="{ goods: is==false }">
       <router-view></router-view>
     </div>
+    </div>
+   
     <!--  -->
   </div>
 </template>
 <script >
-const zh = [
-  {
-    name: "综合",
-    type:0
-  },
-  {
-    name: "新品",
-    type:1
-  },
-  {
-    name: "价格",
-    type:2
-  },
-  {
-    name: "销量",
-    type:3
-  },
-  {
-    name: "筛选",
-    type:4
-  },
-];
 import data from "../../../staic/index.json";
 import goods from "../../../staic/xiaoai.json";
+import gs from "../../../staic/xiaoai.json";
 export default {
   data() {
     return {
       data: data.data,
-      zh,
       goods: goods.goods,
+      gs: gs.gs,
       clicked: 0,
       type: 0,
+      is: false,
     };
   },
   created() {
@@ -112,14 +102,102 @@ export default {
     changeTab(index) {
       this.clicked = index;
     },
-    changeBorder(index) {
-      this.type = index;
-      },
 
+    onzh() {
+      //综合排序
+      this.type = 0;
+      this.goods.sort((a, b) => {
+        return a.id - b.id;
+      });
+      this.gs.sort((a, b) => {
+        return a.id - b.id;
+      });
+    },
+    onhp() {
+      //好评优选
+      this.type = 6;
+      this.goods.sort((a, b) => {
+        return b.hp - a.hp;
+      });
+      this.gs.sort((a, b) => {
+        return b.hp - a.hp;
+      });
+    },
+
+    onxl() {
+      //销量排序
+      this.type = 3;
+      this.goods.sort((a, b) => {
+        return b.pl - a.pl;
+      });
+      this.gs.sort((a, b) => {
+        return b.pl - a.pl;
+      });
+    },
+
+    onSort() {
+      //价格排序
+      this.type = 2;
+      this.goods.sort((a, b) => {
+        return b.priceMin - a.priceMin;
+      });
+      this.gs.sort((a, b) => {
+        return a.priceMin - b.priceMin;
+      });
+    },
+    onSorm() {
+      //新品排序
+      this.type = 1;
+      this.goods.sort((a, b) => {
+        return b.xp - a.xp;
+      });
+      this.gs.sort((a, b) => {
+        return b.xp - a.xp;
+      });
+    },
+
+    onsx() {
+      //筛选
+      this.type = 4;
+    },
+
+    zh() {
+      if (this.is == true) {
+        this.is = false;
+      } else {
+        this.is = true;
+      }
+    },
   },
 };
 </script>
 <style scoped lang='scss'>
+.div {
+  display: none;
+}
+.dv{
+  background: rgba(0, 0, 0, 0.6);
+    width: 3.75rem;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 5.68rem;
+    margin-left: -0.21rem;
+}
+#div {
+  position: absolute;
+  top: 0;
+  background: rgb(244, 244, 244);
+  width: 3.75rem;
+  height: 1rem;
+  border-bottom-left-radius:0.1rem;
+  border-bottom-right-radius:0.1rem;
+  
+  p{
+    font-size: 0.14rem;
+    margin-left: 0.2rem;
+    margin-top: 0.1rem;
+  }
+}
 .p {
   color: rgb(180, 115, 31);
 }
