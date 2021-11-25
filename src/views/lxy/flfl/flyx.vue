@@ -41,10 +41,12 @@
 </template>
 <script>
 import goods from "../../../staic/xiaoai.json";
+import gs from "../../../staic/xiaoai.json";
 export default {
   data() {
     return {
       goods: goods.goods,
+      gs: gs.gs,
       type:0
     };
   },
