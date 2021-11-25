@@ -32,7 +32,7 @@
         />
       </div>
       <!--  -->
-      <div class="four" style="height: 0.49rem">
+      <div  style="height: 0.49rem" class="box_fixed" id="boxFixed" :class="{'is_fixed' : isFixed}">
         <div class="di">
           <p>官方精选</p>
           <p>实时热抢</p>
@@ -242,16 +242,112 @@
         </div>
       </div>
       <!--  -->
-     <!-- <div class="mb">
+     <div class="mb">
      <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
      <div class="zhont">
        <p class="yj">aigo多功能插线板</p>
-       <p class="tj">60天最低价</p>
        <p class="sj">低至3折</p>
        <p class="wj"><span>￥149</span><s>￥499</s></p>
      </div>
-     <div class="bai"></div>
-     </div> -->
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
+      <div class="mb">
+     <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
+     <div class="zhont">
+       <p class="yj">aigo多功能插线板</p>
+       <p class="sj">低至3折</p>
+       <p class="wj"><span>￥149</span><s>￥499</s></p>
+     </div>
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
+
+      <div class="mb">
+     <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
+     <div class="zhont">
+       <p class="yj">aigo多功能插线板</p>
+       <p class="sj">低至3折</p>
+       <p class="wj"><span>￥149</span><s>￥499</s></p>
+     </div>
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
+      <div class="mb">
+     <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
+     <div class="zhont">
+       <p class="yj">aigo多功能插线板</p>
+       <p class="sj">低至3折</p>
+       <p class="wj"><span>￥149</span><s>￥499</s></p>
+     </div>
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
+      <div class="mb">
+     <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
+     <div class="zhont">
+       <p class="yj">aigo多功能插线板</p>
+       <p class="sj">低至3折</p>
+       <p class="wj"><span>￥149</span><s>￥499</s></p>
+     </div>
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
+      <div class="mb">
+     <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
+     <div class="zhont">
+       <p class="yj">aigo多功能插线板</p>
+       <p class="sj">低至3折</p>
+       <p class="wj"><span>￥149</span><s>￥499</s></p>
+     </div>
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
+      <div class="mb">
+     <img src="https://img.youpin.mi-img.com/shopmain/29de757cbb61873258c53d4c8bba8ea0.png@base@tag=imgScale&h=216&m=1&q=80&w=216" alt="">
+     <div class="zhont">
+       <p class="yj">aigo多功能插线板</p>
+       <p class="sj">低至3折</p>
+       <p class="wj"><span>￥149</span><s>￥499</s></p>
+     </div>
+     <div class="bai">
+      <div class="xan">
+        <p></p>
+      </div>
+      <span class="hou">74%</span>
+      <p class="qiang">立即抢</p>
+     </div>
+     </div>
 
     </div>
     <!--  -->
@@ -259,6 +355,29 @@
   </div>
 </template>
 <script>
+ export default {
+    data(){
+      return {
+        isFixed: false,
+        offsetTop:0
+      }
+    },
+    mounted(){
+      window.addEventListener('scroll',this.initHeight);
+      this.$nextTick( () => {
+        this.offsetTop = document.querySelector('#boxFixed').offsetTop;
+      })
+    },
+    methods:{
+      initHeight () {
+        var scrollTop = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop
+        this.isFixed = scrollTop > this.offsetTop ? true : false;
+      },
+    },
+    destroyed () {
+      window.removeEventListener('scroll', this.handleScroll)
+    },
+  }
 </script>
 <style scoped>
 .Mao {
@@ -302,8 +421,25 @@ body{
   font-family: PingFangSC-Regular;
   font-size: 0.14rem;
   line-height: 0.25rem;
+  position: sticky;
+  top: 0;
 }
-
+  .is_fixed{
+    position: fixed;
+    top: 0;
+    left: 50%;
+    margin-left: -250px;
+    z-index: 999;
+  }
+.box_fixed{
+  width: 3.75rem;
+  height: .49rem;
+  background: linear-gradient(to right, rgb(255, 51, 102), rgb(255, 51, 18));
+      background: linear-gradient(to right, rgb(255, 51, 102), rgb(255, 51, 18));
+    position: sticky;
+    z-index: 10;
+    top: 0;
+}
 .center {
   width: 3.41rem;
   margin: 0 auto;
@@ -420,9 +556,11 @@ body{
   top: .03rem;
 }
 .mb{
-  width: 3.51rem;
-  height: 1.26rem;
+  width: 3.31rem;
+  height: 1.10rem;
   padding: .10rem;
+  background: white;
+  border-radius: .10rem;
 }
 .yj{
 color: rgb(0, 0, 0);
@@ -441,14 +579,17 @@ color: rgb(0, 0, 0);
     line-height: .23rem;
 }
 .sj{
+    border: 1px solid;
     border-color: rgb(255, 156, 139);
     border-radius: .02rem;
     border-width: 1px;
-    height: .14rem;
-    justify-content: center;
     padding-right: .03rem;
     padding-left: .03rem;
-    -webkit-box-pack: center;
+    color: rgb(250, 64, 11);
+    font-size: .10rem;
+    font-weight: 400;
+    width: .47rem;
+    margin-top: .43rem;
 }
 .wj span{
 color: rgb(248, 36, 0);
@@ -467,9 +608,48 @@ color: rgb(248, 36, 0);
 .mb{
   display: flex;
   justify-content: space-around;
+  margin-top: .10rem;
 }
 .mb img{
   width: 1.08rem;
   height: 1.08rem;
+}
+.bai{
+  width: .75rem;
+  height: .38rem;
+  background: red;
+  border-radius: .06rem;
+  margin-top: .70rem;
+  padding: .05rem;
+ 
+}
+.xan{
+  background-color: rgba(255, 255, 255, 0.329);
+    height: .05rem;
+    width: .45rem;
+     float: left;
+}
+.xan p{
+  background-color: rgb(255, 255, 255);
+    border-radius: .03rem;
+    height: .04rem;
+    width: 74%;
+}
+.hou{
+  color: rgb(255, 255, 255);
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    float: right;
+    line-height: .10rem;
+}
+.qiang{
+  color: rgb(255, 255, 255);
+    font-size: .12rem;
+    font-weight: 500;
+    letter-spacing: -0.28px;
+    line-height: .20rem;
+    text-align: center;
+   margin-top: .15rem;
 }
 </style>
