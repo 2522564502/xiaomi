@@ -19,7 +19,19 @@
           alt=""
         />
       </div>
-      <!--  -->
+        <!--tab导航strt-->
+        <div class="two">
+                <van-tabs v-model="activeName">
+                     <van-tab
+                             v-for="item in tabList"
+                              :title="item.title"
+                             :key="item.path"
+                             :name="item.path"
+                     >
+                     </van-tab>
+                </van-tabs>
+        </div>
+        <!--tab导航end  -->
       <!--  -->
       <div class="there">
         <img
@@ -33,9 +45,29 @@
       </div>
       <!--  -->
       <div  style="height: 0.49rem" class="box_fixed" id="boxFixed" :class="{'is_fixed' : isFixed}">
-        <div class="di">
+        <div class="dip" style="float:left;">
           <p>官方精选</p>
-          <p>实时热抢</p>
+          <p class="te">实时热抢</p>
+        </div>
+        <div class="rtu" style="float:left;">
+          <p>09:00</p>
+          <p style="font-size:.11rem;">抢购中</p>
+        </div>
+        <div class="rtu" style="float:left;">
+          <p>12:00</p>
+          <p style="font-size:.11rem;">抢购中</p>
+        </div>
+        <div class="rtu" style="float:left;">
+          <p>16:00</p>
+          <p style="font-size:.11rem;">抢购中</p>
+        </div>
+        <div class="rtu" style="float:left;">
+          <p>20:00</p>
+          <p style="font-size:.11rem;">抢购中</p>
+        </div>
+        <div class="rtu" style="float:left;">
+          <p>00:00</p>
+          <p style="font-size:.11rem;">抢购中</p>
         </div>
       </div>
       <!--  -->
@@ -351,15 +383,29 @@
 
     </div>
     <!--  -->
-    
+    <dibu/>
   </div>
 </template>
 <script>
+import dibu from "@/components/di.vue"
  export default {
+   components:{
+  dibu,
+   },
     data(){
       return {
         isFixed: false,
-        offsetTop:0
+        offsetTop:0,
+          tabList:[
+              {title:'首页',path:'home'},
+              {title:'运动出行',path:'exercise'},
+              {title:'家居家装',path:'household'},
+              {title:'海购',path:'kaola'},
+              {title:'智能数码',path:'intelligent'},
+              {title:'家纺餐厨',path:'textiles '},
+              {title:'婴宠',path:'baby'},
+          ],
+          activeName:'baby'
       }
     },
     mounted(){
@@ -380,11 +426,46 @@
   }
 </script>
 <style scoped>
+    .two{
+        margin-left: 0.1rem;
+        margin-right: 0.1rem;
+        margin-bottom: 0.1rem;
+    }
+    ::v-deep .van-tab__text{
+        color: white;
+    }
+    ::v-deep .van-tabs--line .van-tabs__wrap{
+        height: 0.41rem;
+    }
+    ::v-deep .van-tab{
+        line-height: 0.41rem;
+    }
+    ::v-deep .van-tabs__line{
+        background-color:white ;
+    }
+    ::v-deep .van-tabs__nav {
+        background-color:transparent ;
+    }
 .Mao {
   width: 3.75rem;
 }
 body{
   background: rgb(230, 230, 230);
+}
+.te{
+  width: .56rem;
+  height: .18rem;
+  color: rgb(255, 48, 72);
+    font-family: PingFangSC-Medium;
+    font-size: .11rem;
+    font-weight: 500;
+    line-height: .19rem;
+    opacity: 1;
+    text-align: center;
+    background: white;
+    border-radius: .08rem;
+    margin-top: .05rem;
+
 }
 .heard {
   background: linear-gradient(to right, rgb(255, 51, 102), rgb(255, 51, 18));
@@ -432,7 +513,7 @@ body{
     z-index: 999;
   }
 .box_fixed{
-  width: 3.75rem;
+  width: 3.55rem;
   height: .49rem;
   background: linear-gradient(to right, rgb(255, 51, 102), rgb(255, 51, 18));
       background: linear-gradient(to right, rgb(255, 51, 102), rgb(255, 51, 18));
@@ -577,6 +658,21 @@ color: rgb(0, 0, 0);
     height: .20rem;
     letter-spacing: -0.24px;
     line-height: .23rem;
+}
+.dip{
+  color: white;
+}
+.rtu{
+  width: .56rem;
+  height: .44rem;
+}
+.rtu p{
+  color: rgb(255, 255, 255);
+    font-family: PingFangSC-Regular;
+    font-size: .18rem;
+    line-height: .25rem;
+    opacity: 0.7;
+    text-align: center;
 }
 .sj{
     border: 1px solid;

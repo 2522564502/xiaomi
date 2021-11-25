@@ -19,6 +19,8 @@ import Ss from '../views/lxy/ss.vue'
 import Jx from '../views/lxy/jx.vue'
 
 import miao from "@/views/miao/one.vue"
+import shou from "@/views/miao/shou.vue"
+import shipping from "@/views/miao/shipping.vue"
 Vue.use(VueRouter)
 
 const routes = [
@@ -30,7 +32,17 @@ const routes = [
   {
     path: '/miao',
     name: 'miao',
-    component: miao
+    component:miao
+  },
+  {
+    path: '/shipping',
+    name: 'shipping',
+    component:shipping
+  },
+  {
+    path: '/shou',
+    name: 'shou',
+    component: shou
   },
   {
     path: '/gen1',
